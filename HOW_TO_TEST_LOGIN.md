@@ -23,7 +23,7 @@ examples/test-login-workflow.md
 
 ### Step 2: Run Agentic-Code (Choose Your Mode)
 
-**Option A: Manual Mode (100% FREE, learning-focused)**
+**Option A: Manual Mode (learning-focused)**
 ```bash
 cd /Users/anilsharma/webkins/trustlink-aigardian-main/agentic-code
 
@@ -35,7 +35,7 @@ agentic-code run examples/test-login-workflow.md --skip-verification
 # - Cursor/Copilot (for implementation)
 ```
 
-**Option B: Automated Mode (100% FREE, faster)**
+**Option B: Automated Mode (faster)**
 ```bash
 cd /Users/anilsharma/webkins/trustlink-aigardian-main/agentic-code
 

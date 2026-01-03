@@ -3,7 +3,7 @@ CLI interface for agentic-code (Prompt Orchestrator).
 
 Commands: run
 
-No API keys needed - this tool generates prompts for you to use with free AI tools!
+No API keys needed - this tool generates prompts for you to use with accessible AI tools!
 """
 
 from pathlib import Path
@@ -23,7 +23,7 @@ from .utils import print_section
 # Initialize Typer app
 app = typer.Typer(
     name="agentic-code",
-    help="Local-first, governed multi-model agentic coding pipeline (100% FREE - Prompt Orchestrator)",
+    help="Local-first, governed multi-model agentic coding pipeline (Prompt Orchestrator)",
     add_completion=False,
 )
 
@@ -62,13 +62,13 @@ def run(
     Run the agentic coding pipeline on a task.
 
     The pipeline can be run in two modes:
-    1. Prompt-based (default): Generates prompts for you to use with free AI tools.
+    1. Prompt-based (default): Generates prompts for you to use with accessible AI tools.
     2. Automated: Runs the pipeline automatically using API calls, with human review at each stage.
     """
     if automated:
         print_section(f"🚀 AGENTIC-CODE v{__version__} (Automated Pipeline)", style="cyan")
     else:
-        print_section(f"🚀 AGENTIC-CODE v{__version__} (FREE Prompt Orchestrator)", style="cyan")
+        print_section(f"🚀 AGENTIC-CODE v{__version__} (Prompt Orchestrator)", style="cyan")
 
     # Load configuration
     config = load_config(
@@ -104,7 +104,7 @@ def run(
     if automated:
         console.print(f"[dim]  Mode: Automated (API calls with human review)[/dim]")
     else:
-        console.print(f"[dim]  Mode: 100% FREE - Prompt-based (no API calls)[/dim]")
+        console.print(f"[dim]  Mode: Prompt-based (no API calls)[/dim]")
     console.print()
 
     try:
@@ -155,7 +155,7 @@ def version():
     Show version information.
     """
     console.print(f"[bold cyan]agentic-code[/bold cyan] version [green]{__version__}[/green]")
-    console.print(f"[dim]Mode: Prompt Orchestrator (100% FREE - No API costs!)[/dim]")
+    console.print(f"[dim]Mode: Prompt Orchestrator (No API costs)[/dim]")
 
 
 @app.callback(invoke_without_command=True)
@@ -172,14 +172,14 @@ def main(
     Agentic Code - Local-first, governed multi-model coding pipeline.
 
     Modes:
-    - Default: 🆓 100% FREE - Generates prompts for free AI tools (Claude Code CLI, Cursor, Gemini)
+    - Default: Generates prompts for accessible AI tools (Claude Code CLI, Cursor, Gemini)
     - --automated: Requires API keys and provides a fully automated pipeline with human review.
 
     Run 'agentic-code --help' for available commands.
     """
     if version_flag:
         console.print(f"[bold cyan]agentic-code[/bold cyan] version [green]{__version__}[/green]")
-        console.print(f"[dim]Default Mode: Prompt Orchestrator (100% FREE)[/dim]")
+        console.print(f"[dim]Default Mode: Prompt Orchestrator[/dim]")
         console.print(f"[dim]Automated Mode: --automated (requires API keys)[/dim]")
         raise typer.Exit()
 
@@ -187,8 +187,8 @@ def main(
         console.print(Panel(
             "[bold]Agentic Code - Local-first Pipeline[/bold]\n\n"
             "Modes of Operation:\n"
-            "  [bold]Default (Prompt-based):[/bold] 🆓 100% FREE - No API costs!\n"
-            "  Generates prompts for free AI tools:\n"
+            "  [bold]Default (Prompt-based):[/bold] No API costs!\n"
+            "  Generates prompts for accessible AI tools:\n"
             "    • Claude Code CLI (planning & decisions)\n"
             "    • Cursor/Copilot (implementation)\n"
             "    • Gemini (optional verification)\n\n"

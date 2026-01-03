@@ -1,6 +1,6 @@
-# Automation Guide - 100% FREE with Claude Code CLI
+# Automation Guide - with Claude Code CLI
 
-This guide shows how to automate the agentic-code pipeline using **Claude Code CLI** (completely free, no API keys needed).
+This guide shows how to automate the agentic-code pipeline using **Claude Code CLI** (no API keys needed).
 
 ## Why Automate with Claude Code CLI?
 
@@ -33,7 +33,7 @@ This guide shows how to automate the agentic-code pipeline using **Claude Code C
 
 ## Quick Start - Fully Automated
 
-Run the entire pipeline with one command (still 100% free):
+Run the entire pipeline with one command:
 
 ```bash
 # Full automation with Claude Code CLI
@@ -56,7 +56,7 @@ The automation script:
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│  AUTOMATED PIPELINE (Still 100% FREE!)              │
+│  AUTOMATED PIPELINE                                  │
 ├─────────────────────────────────────────────────────┤
 │                                                      │
 │  1. Repository Analysis                             │
@@ -92,7 +92,7 @@ Only **Stage 3: Code Generation** requires manual work:
 - This is intentional - the tool is for **governance**, not replacing you
 
 Optionally manual:
-- **Stage 4: Verification** - Can skip or use Gemini web (also free)
+- **Stage 4: Verification** - Can skip or use Gemini web
 
 ## Usage Examples
 
@@ -113,9 +113,9 @@ python scripts/fully_automated.py examples/simple-function.md --skip-verificatio
 ### What Happens
 
 ```
-🚀 FULLY AUTOMATED AGENTIC CODE (FREE)
+🚀 FULLY AUTOMATED AGENTIC CODE
 Task: examples/simple-function.md
-Mode: Claude Code CLI (100% Free)
+Mode: Claude Code CLI
 Automation: Fully automated (no manual steps)
 
 Run directory: output/2025-12-15_224530_simple-function
@@ -231,7 +231,7 @@ python scripts/fully_automated.py task.md
 | **API mode (Anthropic)** | ~$0.15 | **~$15** |
 | **API mode (OpenAI GPT-4)** | ~$0.30 | **~$30** |
 
-**Winner**: Automated with Claude CLI - **Fast AND Free**! 🎉
+**Winner**: Automated with Claude CLI - **Fast with no API costs**! 🎉
 
 ## Customization
 
@@ -320,14 +320,14 @@ jobs:
 
 ## FAQ
 
-**Q: Is this really free?**
-A: Yes! Claude Code CLI is free, and we're just calling it programmatically.
+**Q: Does this require API keys?**
+A: No! Claude Code CLI requires no API keys, and we're just calling it programmatically.
 
 **Q: How is this different from Cursor?**
 A: This is for **governance** and **multi-agent workflows**, not just code generation.
 
 **Q: Can I use API keys instead?**
-A: Yes, but it costs money ($0.15-0.30 per task). Claude CLI is free!
+A: Yes, but it costs money ($0.15-0.30 per task). Claude CLI requires no API costs!
 
 **Q: What about Codex/GPT for stage 3?**
 A: Stage 3 is still manual - you implement in your IDE with Cursor/Copilot/etc.
@@ -337,10 +337,10 @@ A: You could, but then you lose the human review. The point is governance!
 
 ## Summary
 
-✅ **100% Free** - Uses Claude Code CLI (no API costs)
+✅ **No API costs** - Uses Claude Code CLI
 ✅ **Fast** - No manual copy-paste
 ✅ **Automated** - One command runs entire pipeline
 ✅ **Auditable** - Complete artifact trail preserved
 ✅ **Governed** - Still enforces separation of duties
 
-**Best of both worlds**: Speed of automation + Zero cost of free tools! 🚀
+**Best of both worlds**: Speed of automation + No API costs! 🚀

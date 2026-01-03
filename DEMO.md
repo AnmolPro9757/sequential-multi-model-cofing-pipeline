@@ -35,10 +35,10 @@ $ python scripts/fully_automated.py examples/simple-function.md --skip-verificat
 ### Console Output
 
 ```
-🚀 FULLY AUTOMATED AGENTIC CODE (FREE)
+🚀 FULLY AUTOMATED AGENTIC CODE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Task: examples/simple-function.md
-Mode: Claude Code CLI (100% Free)
+Mode: Claude Code CLI
 Automation: Fully automated (no manual steps)
 
 Run directory: output/2025-12-15_231245_simple-function
@@ -99,7 +99,7 @@ subprocess.run(
 )
 ```
 
-4. **Claude CLI responds** (this is FREE - no API key!):
+4. **Claude CLI responds** (no API key required):
 ```
 🤖 Calling Claude Code CLI...
 ✓ Received response (1,234 characters)
@@ -578,7 +578,7 @@ output/2025-12-15_231245_simple-function/
 | **Total** | | **~34s** |
 
 **Manual time**: ~15s (just implementing code)
-**Automated time**: ~19s (Claude CLI calls - FREE!)
+**Automated time**: ~19s (Claude CLI calls - no API costs!)
 
 ---
 
@@ -616,7 +616,7 @@ output/2025-12-15_231245_simple-function/
 1. **No window switching** - Script handles everything
 2. **No copy-paste** - Automated CLI calls
 3. **Complete audit trail** - Every prompt and response saved
-4. **100% FREE** - Uses Claude Code CLI, not APIs
+4. **No API costs** - Uses Claude Code CLI, not APIs
 5. **Fast execution** - ~34s total, ~19s automated
 
 ### 🚀 Next Steps
@@ -649,4 +649,4 @@ EOF
 python scripts/fully_automated.py my-task.md --skip-verification
 ```
 
-**That's it!** Fully automated, governed, auditable coding - **100% FREE**! 🎉
+**That's it!** Fully automated, governed, auditable coding - **with no API costs**! 🎉

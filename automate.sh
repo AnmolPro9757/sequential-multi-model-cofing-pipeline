@@ -1,9 +1,9 @@
 #!/bin/bash
-# Automation script for agentic-code using Claude Code CLI (100% FREE)
+# Automation script for agentic-code using Claude Code CLI (no API costs)
 #
 # This script automates the prompt orchestrator by:
 # 1. Reading generated prompts
-# 2. Passing them to Claude Code CLI (free)
+# 2. Passing them to Claude Code CLI (no API costs)
 # 3. Saving responses automatically
 # 4. Progressing through all stages
 #
@@ -43,11 +43,11 @@ TASK_FILE="$1"
 SKIP_VERIFICATION="${2:-}"
 
 echo -e "${CYAN}========================================${NC}"
-echo -e "${CYAN}🚀 Automated Agentic Code (FREE)${NC}"
+echo -e "${CYAN}🚀 Automated Agentic Code${NC}"
 echo -e "${CYAN}========================================${NC}"
 echo ""
 echo -e "${BLUE}Task: $TASK_FILE${NC}"
-echo -e "${BLUE}Mode: Claude Code CLI (100% FREE)${NC}"
+echo -e "${BLUE}Mode: Claude Code CLI${NC}"
 echo ""
 
 # Step 1: Start the pipeline (will generate first prompt and wait)

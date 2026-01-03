@@ -33,7 +33,7 @@ class AgenticPipeline:
     """
     Orchestrates the governed multi-agent coding pipeline (prompt-based).
 
-    100% free - generates prompts for user to paste into AI tools.
+    No API costs - generates prompts for user to paste into AI tools.
     """
 
     def __init__(self, config: Config):
@@ -65,7 +65,7 @@ class AgenticPipeline:
 
         print_section("🚀 AGENTIC CODE PIPELINE (Prompt Orchestrator)", style="blue")
         console.print(f"[dim]Task: {task_path}[/dim]")
-        console.print(f"[dim]Mode: 100% Free - Human-in-the-loop prompts[/dim]\n")
+        console.print(f"[dim]Mode: No API costs - Human-in-the-loop prompts[/dim]\n")
 
         # Load task
         task_data = load_task_file(task_path)

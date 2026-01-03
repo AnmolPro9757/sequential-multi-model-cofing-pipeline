@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Fully automated agentic-code using Claude Code CLI (100% FREE).
+Fully automated agentic-code using Claude Code CLI (no API costs).
 
 This script automates the entire pipeline by:
-1. Calling Claude Code CLI programmatically (free)
+1. Calling Claude Code CLI programmatically (no API costs)
 2. Automatically processing all stages
 3. No manual copy-paste needed
 
@@ -101,9 +101,9 @@ def run_automated_pipeline(task_path: Path, skip_verification: bool = False):
     """
     start_time = time.time()
 
-    print_section("🚀 FULLY AUTOMATED AGENTIC CODE (FREE)", style="blue")
+    print_section("🚀 FULLY AUTOMATED AGENTIC CODE", style="blue")
     console.print(f"[dim]Task: {task_path}[/dim]")
-    console.print(f"[dim]Mode: Claude Code CLI (100% Free)[/dim]")
+    console.print(f"[dim]Mode: Claude Code CLI[/dim]")
     console.print(f"[dim]Automation: Fully automated (no manual steps)[/dim]\n")
 
     # Load config
@@ -205,7 +205,7 @@ def run_automated_pipeline(task_path: Path, skip_verification: bool = False):
 
             # For Gemini, we still need manual step (or use Google AI API)
             console.print("\n[yellow bold]⏸  VERIFICATION STEP[/yellow bold]")
-            console.print("[yellow]Option 1: Paste prompt into Gemini web (free)[/yellow]")
+            console.print("[yellow]Option 1: Paste prompt into Gemini web[/yellow]")
             console.print(f"  Prompt: [cyan]{run_dir}/gemini_verification_prompt.md[/cyan]")
             console.print(f"  Save JSON to: [cyan]{run_dir}/gemini_verification_response.json[/cyan]")
             console.print("\n[yellow]Enter 'skip' to bypass verification, or press Enter to continue...[/yellow]")

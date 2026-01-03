@@ -1,8 +1,8 @@
 # Agentic Code - Prompt Orchestrator
 
-**🆓 Local-first, governed multi-model agentic coding pipeline**
+**Local-first, governed multi-model agentic coding pipeline**
 
-A CLI tool that orchestrates governed, multi-agent coding workflows using **prompt generation** instead of API calls. Zero cost, maximum control.
+A CLI tool that orchestrates governed, multi-agent coding workflows using **prompt generation** instead of API calls. No API costs, maximum control.
 
 ---
 
@@ -18,10 +18,10 @@ A CLI tool that orchestrates governed, multi-agent coding workflows using **prom
 ### **Agentic Code (Prompt Orchestrator):**
 - ✅ **Separation of duties** - Different AI models for different roles
 - ✅ **100% transparent** - See and edit every prompt
-- ✅ **Zero cost** - Uses free tools (Claude Code CLI, Cursor, Gemini)
+- ✅ **No API costs** - Uses accessible tools (Claude Code CLI, Cursor, Gemini)
 - ✅ **Human-in-the-loop** - Review and approve every step
 - ✅ **Complete audit trail** - Every decision documented
-- ✅ **No API keys** - Works with tools you already have
+- ✅ **No API keys required** - Works with tools you already have
 
 ---
 
@@ -32,12 +32,12 @@ A CLI tool that orchestrates governed, multi-agent coding workflows using **prom
 │  PROMPT ORCHESTRATOR PIPELINE                           │
 ├─────────────────────────────────────────────────────────┤
 │                                                          │
-│  1. CLAUDE (Architect) - FREE via Claude Code CLI       │
+│  1. CLAUDE (Architect) - via Claude Code CLI            │
 │     ├─ Generate repo analysis prompt                    │
 │     ├─ You paste into Claude Code CLI                   │
 │     └─ You save response                                │
 │                                                          │
-│  2. CLAUDE (Planner) - FREE via Claude Code CLI         │
+│  2. CLAUDE (Planner) - via Claude Code CLI              │
 │     ├─ Generate task planning prompt                    │
 │     ├─ You paste into Claude Code CLI                   │
 │     └─ You save YAML spec                               │
@@ -47,12 +47,12 @@ A CLI tool that orchestrates governed, multi-agent coding workflows using **prom
 │     ├─ You paste into your AI IDE                       │
 │     └─ You implement & save code                        │
 │                                                          │
-│  4. GEMINI (Verification) - FREE via web [OPTIONAL]     │
+│  4. GEMINI (Verification) - via web [OPTIONAL]          │
 │     ├─ Generate verification prompt                     │
 │     ├─ You paste into Gemini web                        │
 │     └─ You save JSON findings                           │
 │                                                          │
-│  5. CLAUDE (Decision) - FREE via Claude Code CLI        │
+│  5. CLAUDE (Decision) - via Claude Code CLI             │
 │     ├─ Generate integration decision prompt             │
 │     ├─ You paste into Claude Code CLI                   │
 │     └─ You save APPROVE/REJECT decision                 │
@@ -68,15 +68,15 @@ This tool offers three distinct execution modes to fit your workflow, from fully
 
 ---
 
-### **1. Prompt-Based (Manual & Free)**
+### **1. Prompt-Based (Manual)**
 
-This is the default mode. It's 100% free and gives you maximum control by generating prompts for you to use in your existing AI tools (like the Claude Code CLI or Gemini's web interface).
+This is the default mode. It gives you maximum control by generating prompts for you to use in your existing AI tools (like the Claude Code CLI or Gemini's web interface).
 
 **Usage:**
 ```bash
 agentic-code run examples/simple-function.md
 ```
-- **Cost:** Free
+- **Cost:** No API costs
 - **Control:** Full human-in-the-loop at every stage.
 - **Requirements:** Manual copy-pasting between tools.
 
@@ -98,15 +98,15 @@ python scripts/truly_automated_pipeline.py examples/simple-function.md
 
 ---
 
-### **3. CLI Orchestrator (Hybrid & Free)**
+### **3. CLI Orchestrator (Hybrid)**
 
-This mode automates the calls to the free Claude Code CLI but still requires manual steps for code implementation and the optional Gemini verification. It's a good balance between automation and cost.
+This mode automates the calls to the Claude Code CLI but still requires manual steps for code implementation and the optional Gemini verification. It's a good balance between automation and cost.
 
 **Usage:**
 ```bash
 python scripts/hybrid_pipeline.py examples/simple-function.md
 ```
-- **Cost:** Free
+- **Cost:** No API costs
 - **Control:** Partially automated, with manual steps for coding and verification.
 - **Requirements:** Claude Code CLI installed.
 
@@ -126,7 +126,7 @@ pip install -e .
 
 ### Run Your First Pipeline (Prompt-Based)
 
-This is the recommended way to start, as it's free and helps you understand each step of the process.
+This is the recommended way to start, as it helps you understand each step of the process.
 
 ```bash
 # Run with an example task
@@ -416,12 +416,12 @@ Every run creates:
 - Final decision with rationale
 - Complete file manifest
 
-### 4. **Zero Cost**
+### 4. **No API Costs**
 
-Uses only free tools:
-- **Claude Code CLI** - You're using it right now (free)
-- **Cursor** - Free tier available, or use Copilot
-- **Gemini** - Free web interface, optional step
+Works with accessible tools:
+- **Claude Code CLI** - You're using it right now
+- **Cursor** - Accessible tier available, or use Copilot
+- **Gemini** - Web interface, optional step
 
 ---
 
@@ -429,8 +429,8 @@ Uses only free tools:
 
 | Feature | API-Based Tools | Agentic Code (Prompt Orchestrator) |
 |---------|-----------------|-------------------------------------|
-| **Cost** | $0.10-0.50/task | **$0.00 forever** |
-| **API Keys** | Required (3+) | **None needed** |
+| **Cost** | $0.10-0.50/task | **No API costs** |
+| **API Keys** | Required (3+) | **None required** |
 | **Transparency** | Black box | **See every prompt** |
 | **Control** | Auto-execution | **Human approval required** |
 | **Auditability** | Limited logs | **Complete artifact trail** |
@@ -618,7 +618,7 @@ Agentic Code is built on the principle that **AI should augment, not replace, hu
 - ✅ Learn how AI thinks about code
 - ✅ Maintain full control and accountability
 - ✅ Create audit trails for compliance
-- ✅ **Do it all for free**
+- ✅ **Do it all without API costs**
 
 ---
 
@@ -634,7 +634,7 @@ agentic-code run examples/simple-function.md --skip-verification
 # Learn
 # Each prompt teaches you what that agent does
 # Each response shows you how AI thinks
-# Complete transparency, zero cost
+# Complete transparency, no API costs
 ```
 
 **Welcome to governed AI coding!** 🎉
