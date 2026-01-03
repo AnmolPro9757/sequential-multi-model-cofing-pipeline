@@ -231,7 +231,7 @@ python scripts/fully_automated.py task.md
 | **API mode (Anthropic)** | ~$0.15 | **~$15** |
 | **API mode (OpenAI GPT-4)** | ~$0.30 | **~$30** |
 
-**Winner**: Automated with Claude CLI - **Fast with no API costs**! 🎉
+**Winner**: Automated with Claude CLI - **Fast with subscription-based pricing** (no pay-per-use)! 🎉
 
 ## Customization
 
@@ -327,7 +327,7 @@ A: No! Claude Code CLI requires no API keys, and we're just calling it programma
 A: This is for **governance** and **multi-agent workflows**, not just code generation.
 
 **Q: Can I use API keys instead?**
-A: Yes, but it costs money ($0.15-0.30 per task). Claude CLI requires no API costs!
+A: Yes, but it costs per task ($0.15-0.30). Claude CLI uses subscription pricing (Claude Pro $20/mo)!
 
 **Q: What about Codex/GPT for stage 3?**
 A: Stage 3 is still manual - you implement in your IDE with Cursor/Copilot/etc.
@@ -337,10 +337,10 @@ A: You could, but then you lose the human review. The point is governance!
 
 ## Summary
 
-✅ **No API costs** - Uses Claude Code CLI
+✅ **Subscription-based** - Uses Claude Code CLI (Claude Pro subscription required)
 ✅ **Fast** - No manual copy-paste
 ✅ **Automated** - One command runs entire pipeline
 ✅ **Auditable** - Complete artifact trail preserved
 ✅ **Governed** - Still enforces separation of duties
 
-**Best of both worlds**: Speed of automation + No API costs! 🚀
+**Best of both worlds**: Speed of automation + Subscription pricing (no pay-per-use)! 🚀

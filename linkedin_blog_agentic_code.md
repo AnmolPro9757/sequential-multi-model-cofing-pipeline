@@ -14,7 +14,7 @@ Since our initial release, we've listened to feedback and pushed the boundaries 
 
 1.  **Pluggable Implementation Agent (Bring Your Own Coder):** We fixed a major "design violation" where our automated `CodexAgent` used the Gemini API. Now, you can configure the pipeline to use **any command-line code generation tool you want**, including your own `codex` CLI. This enhances the separation of duties and puts you in complete control of the toolchain.
 2.  **Robust Verification:** We've made the optional "Verification" stage more deliberate. In our hybrid automated mode, you now have to explicitly type 'skip' to bypass this crucial QA step, preventing accidental omissions and strengthening the pipeline's governance.
-3.  **Crystal-Clear Execution Modes:** We've refined and clarified the three ways to run the pipeline, making it easier to choose the right balance of cost, speed, and control for your needs: Manual, Hybrid (no-cost automation), and Truly Automated (API-driven).
+3.  **Crystal-Clear Execution Modes:** We've refined and clarified the three ways to run the pipeline, making it easier to choose the right balance of cost, speed, and control for your needs: Manual, Hybrid (subscription-based automation), and Truly Automated (API-driven).
 
 Read on to see how these changes make `agentic-code` the most transparent and flexible agentic coding tool available today.
 
@@ -36,7 +36,7 @@ We asked ourselves: **What if we could build something better? Something that's 
 
 #### The Vision: A Multi-Agent Pipeline That Costs Nothing
 
-Our vision was ambitious but grounded in a simple insight: **The most powerful AI models are already accessible without API costs**—you just have to use them differently.
+Our vision was ambitious but grounded in a simple insight: **The most powerful AI models are already accessible with subscription-based tools**—you just have to use them differently.
 
 - **Claude Code CLI**: Free, unlimited (you're using it right now)
 - **Cursor**: Free tier available
@@ -67,7 +67,7 @@ Your Request → Black Box API Call → Code Appears
 Your Request → Generate Prompt → YOU Paste into Free AI Tool → YOU Save Response
          ↓
    (Complete transparency - you see every prompt)
-   (No API costs - uses accessible tools)
+   (Subscription-based tools - uses accessible tools)
    (You can edit prompts before using them)
    (Complete audit trail)
 ```
@@ -97,7 +97,7 @@ We designed a five-stage workflow with **separation of duties**—no AI agent re
   - **Automated (CLI):** Configure the pipeline to use your own CLI tool (e.g., a `codex` CLI).
   - **Automated (API):** Let the pipeline use the Gemini API by default.
 - **You save or the agent saves the code** to the specified directory.
-- **Cost:** Free if using your own tools; API costs apply otherwise.
+- **Cost:** Free if using your own tools; subscription or pay-per-use costs apply otherwise.
 
 **Stage 4: Verification (Gemini as "QA Engineer") [Optional]**
 - Tool generates a verification prompt with the code
@@ -129,7 +129,7 @@ agentic-code run task.md
 # → You copy response back
 # → Repeat for every stage... 😓
 
-# New way (automated, no API costs!)
+# New way (automated, subscription-based tools!)
 python scripts/hybrid_pipeline.py task.md --skip-verification
 # → Automatically calls: claude chat < prompt.md
 # → Captures response automatically
@@ -139,7 +139,7 @@ python scripts/hybrid_pipeline.py task.md --skip-verification
 
 **This changes everything:**
 - ✅ **Still accessible** (uses Claude CLI, not Anthropic API)
-- ✅ **No API keys needed** (CLI authentication requires no API costs)
+- ✅ **No API keys needed** (CLI authentication requires subscription-based tools)
 - ✅ **Fast execution** (no manual copy-paste)
 - ✅ **Complete audit trail** (all prompts and responses saved)
 - ✅ **Human oversight** (you still review and approve)
@@ -163,7 +163,7 @@ Stages 1, 2, and 5 (Claude-based) are fully automated. Stage 3 (code implementat
 ---
 **2. Hybrid Mode (The Pragmatist & The Scrappy Team)**
 
-- **Who it's for:** Developers who want to automate the tedious parts (like copy-pasting prompts) without API costs, while still handling the critical coding step manually.
+- **Who it's for:** Developers who want to automate the tedious parts (like copy-pasting prompts) with subscription-based tools, while still handling the critical coding step manually.
 - **Key Characteristics:**
     - **Cost:** 100% Free
     - **Control:** Partially automated; human-in-the-loop for coding and verification.
@@ -173,7 +173,7 @@ Stages 1, 2, and 5 (Claude-based) are fully automated. Stage 3 (code implementat
 ---
 **3. Truly Automated Mode (The Pro & The Enterprise Team)**
 
-- **Who it's for:** Professionals and teams who need maximum speed and are comfortable with API costs. This mode allows for full, hands-off automation.
+- **Who it's for:** Professionals and teams who need maximum speed and are comfortable with pay-per-use API costs. This mode allows for full, hands-off automation.
 - **Key Characteristics:**
     - **Cost:** Paid (API usage)
     - **Control:** Fully automated with "Bring Your Own Coder" flexibility (via `implementation_cli_command`).
@@ -184,7 +184,7 @@ Stages 1, 2, and 5 (Claude-based) are fully automated. Stage 3 (code implementat
 
 #### Why This Matters: Governance Meets Accessibility
 
-The real innovation isn't just the lack of API costs—it's that it's **governed and transparent**.
+The real innovation isn't just the subscription-based model—it's that it's **governed and transparent**.
 
 **Every run creates a complete audit trail:**
 
@@ -340,7 +340,7 @@ With agentic-code, **every prompt is visible and editable**. You learn:
 - ✅ Building audit trails for compliance (SOC 2, ISO 27001)
 - ✅ Complex refactoring with multiple considerations
 - ✅ Teams with code review requirements
-- ✅ **Anyone who wants to code with AI without API costs**
+- ✅ **Anyone who wants to code with AI with subscription-based tools**
 
 **Not ideal for:**
 - ❌ Quick one-line fixes (use Copilot inline)
@@ -358,7 +358,7 @@ The dream of "tell AI what you want and it builds it" is real, but it needs:
 - **Accessibility**: Not locked behind expensive APIs
 - **Auditability**: Complete trail for compliance
 
-Agentic Code proves you can have all of this **without API costs**.
+Agentic Code proves you can have all of this **with subscription-based tools**.
 
 #### Getting Started
 
@@ -366,10 +366,10 @@ Agentic Code proves you can have all of this **without API costs**.
 # Install
 pip install -e .
 
-# Run your first pipeline (Manual Prompt-Based mode - no API costs!)
+# Run your first pipeline (Manual Prompt-Based mode - subscription-based tools!)
 agentic-code run examples/simple-function.md
 
-# Or use the Hybrid CLI Orchestrator mode (no API costs!)
+# Or use the Hybrid CLI Orchestrator mode (subscription-based tools!)
 python scripts/hybrid_pipeline.py examples/simple-function.md
 
 # Or use the Truly Automated API-Based mode (paid, requires API keys)
@@ -383,9 +383,9 @@ Every prompt teaches you something. Every stage shows you how professional softw
 
 > "The best AI coding tools don't replace human judgment—they enhance it with structure, transparency, and zero cost."
 
-We built agentic-code on the principle that **AI should augment, not replace**. By making every step transparent, requiring human approval, and eliminating cost barriers, we're democratizing access to enterprise-grade agentic AI workflows.
+We built agentic-code on the principle that **AI should augment, not replace**. By making every step transparent, requiring human approval, and using subscription-based tools (no pay-per-use charges), we're making enterprise-grade agentic AI workflows more accessible.
 
-The dream of agentic coding isn't dead. It's just been made accessible without API costs.
+The dream of agentic coding isn't dead. It's just been made accessible with subscription-based tools.
 
 **Welcome to governed AI coding. Welcome to the future. And it's accessible.** 🎉
 

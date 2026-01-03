@@ -8,7 +8,7 @@ Coordinates the multi-agent workflow using prompt generation and human-in-the-lo
 4. Gemini verifies (prompt → user pastes response) [OPTIONAL]
 5. Claude decides (prompt → user pastes response)
 
-All steps are human-supervised. Zero API costs!
+All steps are human-supervised. Subscription-based tools (no pay-per-use charges).
 """
 
 import time
@@ -33,7 +33,7 @@ class AgenticPipeline:
     """
     Orchestrates the governed multi-agent coding pipeline (prompt-based).
 
-    No API costs - generates prompts for user to paste into AI tools.
+    Subscription-based tools - generates prompts for user to paste into AI tools.
     """
 
     def __init__(self, config: Config):
@@ -65,7 +65,7 @@ class AgenticPipeline:
 
         print_section("🚀 AGENTIC CODE PIPELINE (Prompt Orchestrator)", style="blue")
         console.print(f"[dim]Task: {task_path}[/dim]")
-        console.print(f"[dim]Mode: No API costs - Human-in-the-loop prompts[/dim]\n")
+        console.print(f"[dim]Mode: Subscription-based - Human-in-the-loop prompts[/dim]\n")
 
         # Load task
         task_data = load_task_file(task_path)

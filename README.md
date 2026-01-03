@@ -2,7 +2,7 @@
 
 **Local-first, governed multi-model agentic coding pipeline**
 
-A CLI tool that orchestrates governed, multi-agent coding workflows using **prompt generation** instead of API calls. No API costs, maximum control.
+A CLI tool that orchestrates governed, multi-agent coding workflows using **prompt generation** instead of API calls. Subscription-based tools, maximum control.
 
 ---
 
@@ -18,7 +18,7 @@ A CLI tool that orchestrates governed, multi-agent coding workflows using **prom
 ### **Agentic Code (Prompt Orchestrator):**
 - ✅ **Separation of duties** - Different AI models for different roles
 - ✅ **100% transparent** - See and edit every prompt
-- ✅ **No API costs** - Uses accessible tools (Claude Code CLI, Cursor, Gemini)
+- ✅ **Subscription-based** - Uses tools like Claude Code CLI, Cursor, Gemini (no pay-per-use API charges)
 - ✅ **Human-in-the-loop** - Review and approve every step
 - ✅ **Complete audit trail** - Every decision documented
 - ✅ **No API keys required** - Works with tools you already have
@@ -76,7 +76,7 @@ This is the default mode. It gives you maximum control by generating prompts for
 ```bash
 agentic-code run examples/simple-function.md
 ```
-- **Cost:** No API costs
+- **Cost:** Subscription-based tools (Claude Pro, Cursor, etc.) - no pay-per-use charges
 - **Control:** Full human-in-the-loop at every stage.
 - **Requirements:** Manual copy-pasting between tools.
 
@@ -106,9 +106,9 @@ This mode automates the calls to the Claude Code CLI but still requires manual s
 ```bash
 python scripts/hybrid_pipeline.py examples/simple-function.md
 ```
-- **Cost:** No API costs
+- **Cost:** Subscription-based (Claude Pro) - no pay-per-use charges
 - **Control:** Partially automated, with manual steps for coding and verification.
-- **Requirements:** Claude Code CLI installed.
+- **Requirements:** Claude Code CLI installed (requires Claude Pro subscription).
 
 ---
 
@@ -416,12 +416,12 @@ Every run creates:
 - Final decision with rationale
 - Complete file manifest
 
-### 4. **No API Costs**
+### 4. **Subscription-Based Model**
 
-Works with accessible tools:
-- **Claude Code CLI** - You're using it right now
-- **Cursor** - Accessible tier available, or use Copilot
-- **Gemini** - Web interface, optional step
+Works with subscription-based tools (no pay-per-use API charges):
+- **Claude Code CLI** - Requires Claude Pro subscription ($20/month)
+- **Cursor** - Subscription-based tiers available
+- **Gemini** - Free tier available with limits
 
 ---
 
@@ -429,7 +429,7 @@ Works with accessible tools:
 
 | Feature | API-Based Tools | Agentic Code (Prompt Orchestrator) |
 |---------|-----------------|-------------------------------------|
-| **Cost** | $0.10-0.50/task | **No API costs** |
+| **Cost** | $0.10-0.50/task (pay-per-use) | **Subscription-based** (Claude Pro $20/mo) |
 | **API Keys** | Required (3+) | **None required** |
 | **Transparency** | Black box | **See every prompt** |
 | **Control** | Auto-execution | **Human approval required** |
@@ -618,7 +618,7 @@ Agentic Code is built on the principle that **AI should augment, not replace, hu
 - ✅ Learn how AI thinks about code
 - ✅ Maintain full control and accountability
 - ✅ Create audit trails for compliance
-- ✅ **Do it all without API costs**
+- ✅ **Do it all with subscription-based tools** (no pay-per-use charges)
 
 ---
 
@@ -634,7 +634,7 @@ agentic-code run examples/simple-function.md --skip-verification
 # Learn
 # Each prompt teaches you what that agent does
 # Each response shows you how AI thinks
-# Complete transparency, no API costs
+# Complete transparency, subscription-based model
 ```
 
 **Welcome to governed AI coding!** 🎉

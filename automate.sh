@@ -1,9 +1,9 @@
 #!/bin/bash
-# Automation script for agentic-code using Claude Code CLI (no API costs)
+# Automation script for agentic-code using Claude Code CLI (subscription-based)
 #
 # This script automates the prompt orchestrator by:
 # 1. Reading generated prompts
-# 2. Passing them to Claude Code CLI (no API costs)
+# 2. Passing them to Claude Code CLI (subscription-based)
 # 3. Saving responses automatically
 # 4. Progressing through all stages
 #

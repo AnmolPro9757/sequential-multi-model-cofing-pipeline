@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Fully automated agentic-code using Claude Code CLI (no API costs).
+Fully automated agentic-code using Claude Code CLI (subscription-based).
 
 This script automates the entire pipeline by:
-1. Calling Claude Code CLI programmatically (no API costs)
+1. Calling Claude Code CLI programmatically (subscription-based)
 2. Automatically processing all stages
 3. No manual copy-paste needed
 

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Agentic Code is a **prompt-based orchestrator** for governed multi-agent coding workflows. Unlike traditional AI coding tools that make API calls, this tool generates prompts that users paste into accessible AI tools (Claude Code CLI, Cursor, Gemini) with full human-in-the-loop supervision.
 
-**Core Philosophy**: No API costs, complete transparency, separation of duties, and human approval at every step.
+**Core Philosophy**: Subscription-based tools (no pay-per-use), complete transparency, separation of duties, and human approval at every step.
 
 ## Development Commands
 
@@ -27,7 +27,7 @@ agentic-code run examples/simple-function.md
 # Custom output directory
 agentic-code run task.md --output /custom/path
 
-# AUTOMATED MODE (uses Claude Code CLI - no API costs!)
+# AUTOMATED MODE (uses Claude Code CLI - subscription-based!)
 # Automates stages 1, 2, 5 using Claude CLI
 python scripts/fully_automated.py examples/simple-function.md --skip-verification
 
@@ -64,7 +64,7 @@ The tool now supports **fully automated execution** using Claude Code CLI progra
 **Automated Mode** (new):
 - Generate prompt → Automatically call `claude chat` → Capture response → Save automatically
 
-**No API costs!** Uses Claude Code CLI (`claude chat --no-stream`) instead of Anthropic API.
+**Subscription-based!** Uses Claude Code CLI (`claude chat --no-stream`) instead of pay-per-use Anthropic API. Requires Claude Pro subscription.
 
 **How to use**:
 ```bash

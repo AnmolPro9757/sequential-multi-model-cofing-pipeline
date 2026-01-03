@@ -578,7 +578,7 @@ output/2025-12-15_231245_simple-function/
 | **Total** | | **~34s** |
 
 **Manual time**: ~15s (just implementing code)
-**Automated time**: ~19s (Claude CLI calls - no API costs!)
+**Automated time**: ~19s (Claude CLI calls - subscription-based!)
 
 ---
 
@@ -616,7 +616,7 @@ output/2025-12-15_231245_simple-function/
 1. **No window switching** - Script handles everything
 2. **No copy-paste** - Automated CLI calls
 3. **Complete audit trail** - Every prompt and response saved
-4. **No API costs** - Uses Claude Code CLI, not APIs
+4. **Subscription-based** - Uses Claude Code CLI (requires Claude Pro subscription)
 5. **Fast execution** - ~34s total, ~19s automated
 
 ### 🚀 Next Steps
@@ -649,4 +649,4 @@ EOF
 python scripts/fully_automated.py my-task.md --skip-verification
 ```
 
-**That's it!** Fully automated, governed, auditable coding - **with no API costs**! 🎉
+**That's it!** Fully automated, governed, auditable coding - **with subscription-based tools** (no pay-per-use)! 🎉

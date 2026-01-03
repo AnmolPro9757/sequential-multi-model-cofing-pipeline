@@ -155,7 +155,7 @@ def version():
     Show version information.
     """
     console.print(f"[bold cyan]agentic-code[/bold cyan] version [green]{__version__}[/green]")
-    console.print(f"[dim]Mode: Prompt Orchestrator (No API costs)[/dim]")
+    console.print(f"[dim]Mode: Prompt Orchestrator (Subscription-based)[/dim]")
 
 
 @app.callback(invoke_without_command=True)
@@ -187,7 +187,7 @@ def main(
         console.print(Panel(
             "[bold]Agentic Code - Local-first Pipeline[/bold]\n\n"
             "Modes of Operation:\n"
-            "  [bold]Default (Prompt-based):[/bold] No API costs!\n"
+            "  [bold]Default (Prompt-based):[/bold] Subscription-based tools!\n"
             "  Generates prompts for accessible AI tools:\n"
             "    • Claude Code CLI (planning & decisions)\n"
             "    • Cursor/Copilot (implementation)\n"
